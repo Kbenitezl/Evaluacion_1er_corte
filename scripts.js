@@ -1,3 +1,4 @@
+// Carousel functionality
 let currentSlide = 0;
 const slides = document.querySelectorAll('.carousel-images img');
 const totalSlides = slides.length;
@@ -8,7 +9,7 @@ function moveSlide(direction) {
     if (currentSlide >= totalSlides) currentSlide = 0;
     const carouselImages = document.querySelector('.carousel-images');
     const slideWidth = slides[0].clientWidth;
-    carouselImages.style.transform = `translateX(-${currentSlide * slideWidth}px)`; 
+    carouselImages.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
 }
 
 document.querySelectorAll('nav a').forEach(link => {
