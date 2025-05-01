@@ -9,7 +9,7 @@
 <body>
     <header>
         <img src="Img/logo-uam-2.png" alt="UAM Logo">
-        <h1>Universidad Americana (UAM)</h1>
+        <h1>Universidad Americana</h1>
     </header>
     <nav>
         <a href="#home">Inicio</a>
@@ -62,6 +62,37 @@
             <p><strong>Fecha:</strong> 17 de mayo de 2025</p>
             <p><strong>Horario:</strong> 9:00 AM - 11:00 AM</p>
         </div>
+    </section>
+
+    <section id="register" class="container" style="display: none;">
+        <h2>Registro para Conferencias</h2>
+        <form id="registrationForm" onsubmit="handleSubmit(event)">
+            <label for="name">Nombre Completo *</label>
+            <input type="text" id="name" required>
+            <span id="nameError" class="error"></span>
+
+            <label for="email">Correo Electrónico Institucional *</label>
+            <input type="email" id="email" required>
+            <span id="emailError" class="error"></span>
+
+            <label for="career">Carrera *</label>
+            <select id="career" required>
+                <option value="">Selecciona tu carrera</option>
+                <option value="ingenieria">Ingeniería</option>
+                <option value="administracion">Administración</option>
+                <option value="diseno">Diseño</option>
+                <option value="otro">Otro</option>
+            </select>
+            <span id="careerError" class="error"></span>
+
+            <label>Conferencias a las que desea asistir *</label>
+            <label><input type="checkbox" name="conference" value="github"> Uso de GitHub en proyectos colaborativos</label>
+            <label><input type="checkbox" name="conference" value="docker"> Introducción a Docker para entornos de desarrollo</label>
+            <label><input type="checkbox" name="conference" value="linux"> Configuración básica de servidores Linux</label>
+            <span id="conferenceError" class="error"></span>
+
+            <button type="submit">Registrarse</button>
+        </form>
     </section>
 
     <footer>

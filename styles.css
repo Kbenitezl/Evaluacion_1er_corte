@@ -71,6 +71,39 @@ nav a:hover {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+form {
+    background-color: white;
+    padding: 2em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form label {
+    display: block;
+    margin: 0.5em 0;
+}
+form input, form select {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form input[type="checkbox"] {
+    width: auto;
+    margin-right: 0.5em;
+}
+form button {
+    background-color: #0A6C74;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.error {
+    color: red;
+    font-size: 0.9em;
+}
 footer {
     background-color: #0A6C74;
     color: white;
